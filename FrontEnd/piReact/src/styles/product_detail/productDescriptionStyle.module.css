@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --colorPrincipal:#FBC02D;
+    --color2:#263238;
+    --color3:#607D8B;
+    --color4:#FFFBE2;
+    --size12: 12px;
+    --size24: 24px;
+}
+
+.container_title_description{
+
+    margin-left: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+.container_title_description h2{
+
+    color: var(--color2);
+    font-size: 24px;
+
+}
+
+.container_info{
+
+    margin-left: 4%;
+    padding-right: 10.5%;
+
+}
+
+.container_info>p{
+
+    color: var(--color3);
+    font-weight: 515;
+    font-style: 14;
+    padding-bottom: 1.5%;
+
+}
+
+@media (min-width: 768px){
+    .container_info>p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .container_title_description{
+        margin-left: 2%;
+        margin-right: 20%;
+    }
+
+    .container_title_description h2{
+        font-size: 24px;
+    }
+
+    .container_info>p{
+        font-weight: 500;
+        padding-bottom: 2.5%;
+    }
+
+}

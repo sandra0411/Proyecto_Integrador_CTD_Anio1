@@ -1,0 +1,35 @@
+.pagination_nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.pagination{
+    display: flex;
+}
+
+.page{
+    padding: 10px;
+    background-color: var(--colorPrincipal);
+    font-size: 23px;
+    border-radius: 50%;
+    margin: 0 2px;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.page_link{
+    text-decoration: none;
+    color: white;
+}
+
+.page:hover {
+    background-color: #05728d;
+    color: white;
+    transition: 0.5s;
+    transform: scale(1.03)
+}

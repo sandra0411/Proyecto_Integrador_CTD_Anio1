@@ -1,0 +1,361 @@
+
+#hamburguer_link {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header{
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between; 
+  position: sticky;
+  top: 0px;
+  z-index:999;
+  height: 80px;
+}
+
+nav{
+  display: flex;
+  justify-content: end;
+  width: 40%;
+ 
+} 
+
+header .company a{
+  display: flex;
+  align-items: end;
+  padding: 12px 0px 23px 32px;
+}
+
+header .company .logo{
+  cursor: pointer;
+}
+
+header .company a .slogan{
+  padding: 12px;
+  font-size: var(--size20);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--color3);
+  cursor: pointer;
+}
+
+header .user_entry{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 20px;
+  width: 100%;
+}
+
+header .user_entry a{
+  width:47%;
+  padding: 10px; 
+  text-align: center;
+  border: 2px solid var(--colorPrincipal);
+  color: var(--colorPrincipal);
+  border-radius: 5px;
+  font-size: var(--size16);
+  font-weight: 700;
+  transition: 0.4s;
+}
+
+header .user_entry a:hover {
+  background-color: #05728d;
+  color: white;
+  transition: 0.5s;
+  transform: scale(1.03)
+}
+
+header .user_data{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 85%;
+}
+
+header .user_data div a h2 {
+  padding: 4px;
+  text-decoration: none;
+  color: var(--color2);
+}
+
+header .user_data div a h2:hover{
+  background-color: var(--colorPrincipal);
+  color: var(--color4);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.45s;
+}
+
+header .user_data .avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color2);
+  color: #FFFFFF;
+  padding: 4%;
+  font-size: var(--size20);
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4%;
+}
+
+header .user_data .hi_username{
+  font-size: var(--size16);
+  font-weight: 700;
+}
+
+header .user_data .hello{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+header .user_data .username{
+  color: var(--colorPrincipal);
+}
+
+.initials{
+  color: var(--color4)
+}
+
+
+header .user_data .logout{
+  position:relative;
+  right:20px;
+  bottom: 20px;
+  font-size: 22px;
+  color: var(--color2);
+  font-weight: 700;
+  
+}
+
+.logout{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+nav .hamburguer_menu{
+  display: none;
+}
+
+.menu{
+  display: none;
+}
+.kangrebur{
+  display:none;
+}
+@media screen and ( max-width: 768px){
+
+  header .user_data .logout{
+    margin-left: 10px;
+  }
+
+  header{
+    height: 98px;
+  }
+ 
+  .slogan{
+    display:none;
+  }  
+  
+  header .user_data{
+    width: 100%;
+  }  
+
+  header .company a{
+    padding: 25px 0px 23px 32px;
+  }   
+  
+}
+
+@media (max-width: 480px) {
+  body{
+    background-color: green;
+  }
+  header .user_entry{
+     display: none;
+  }
+  header .user_data{
+    display: none;
+  } 
+  .menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:30%;
+    
+ }
+  .kangrebur{
+    display:block;
+    font-size: 25px; 
+
+  }
+
+  nav .hamburguer_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #FFFFFF;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 75%;
+    z-index: 99;
+    height: 100vh;
+    left: 100%;
+    transition: left 0.3s;
+    
+  }
+
+  nav .hamburguer_menu_visible{
+    left: 25%;
+  }
+
+  nav .dropdown_desktop{
+    background-color: var(--colorPrincipal);
+    width: 100%;
+    color: #FFFFFF;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+  .dropdown_desktop h3{
+    font-size: var(--size20);
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px 10px;
+    font-weight: 700;
+  }
+
+  .dropdown_desktop .close_menu{
+    padding: 12px 14px;
+    font-size: var(--size24);
+    font-weight: 900;
+  }
+
+  .dropdown_desktop .dropdown_login{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10px;
+
+  }
+
+  .dropdown_login .hi_username{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px 0px;
+    font-size: var(--size16);
+    font-weight: 700;
+  }
+
+  .dropdown_login .avatar{
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: var(--color3);
+    padding: 10px;
+    font-size: var(--size20);
+    font-weight: 700;
+  }
+  
+  
+  .dropdown_login .hello{
+    color: #FFFFFF;
+  }
+  
+  .dropdown_login .username{
+    color: var(--color2);
+  }
+
+  nav .entry{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 12px 0px;
+    justify-content: flex-start; 
+  }
+
+  nav .entry a{
+    color: var(--color2);
+    font-weight: 700;
+    font-size: 16px;
+    padding-right: 15px;
+  }
+
+  nav .line{
+    background-color: var(--color3);
+    height: 1px;
+    width: 95%;
+    margin: 16px 8px;
+  }
+
+  nav .entry_icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 75%;
+    padding-top: 20px;
+  }
+
+  .nav_login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nav_login .space{
+    height: 1px;
+  }
+
+  
+
+  .nav_login .line2{
+    background-color: var(--color3);
+    height: 1px;
+    width: 95%;
+    margin: 3px 8px 15px 8px;
+    
+  }
+
+
+  .nav_login .close_option{
+  width: 100%;
+  text-align: end;
+  padding-right: 15px;
+  
+  }
+
+  nav .nav_social_networks{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+  }
+
+  nav .nav_social_networks i{
+    font-size: 23px;
+    color: var(--color3);
+    padding: 10px;
+    
+  }
+
+  .nav_footer .close_option span{
+    color: var(--colorPrincipal);
+    display: inline;
+    margin: 0px;
+  }
+}
+

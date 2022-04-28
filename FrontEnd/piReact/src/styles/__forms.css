@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --colorPrincipal:#FBC02D;
+    --color2:#263238;
+    --color3:#607D8B;
+    --color4:#FFFBE2;
+    --size12: 12px;
+    --size14: 14px;
+    --size16: 16px;
+    --size20: 20px;
+    --size24: 24px;
+    }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: var(--color4);
+    min-height: 100vh;
+  }   
+   
+  .form-create-account, .form-login {
+    position: relative;
+    height: 85vh; 
+    width: 28em;
+    display: flex;
+    flex-direction: column;
+    margin: 0 calc(50% - 14em);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-form {
+    color: var(--colorPrincipal);
+    padding-bottom: .8em;
+}
+
+.input-form {
+    width: 100%;
+    padding: .4em .5em;
+    background-color: var(--secondary);
+    border: 1px solid var(--color3);
+    border-radius: .2em;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.12));
+    margin: .5em 0;
+}
+
+.input-form:focus{
+    outline: none;
+    box-shadow: 0 4px 1px -1px rgb(142, 149, 151);
+}
+
+.label-form {
+    padding-bottom: .7em;
+    width: 100%;
+    text-align: initial;
+}
+
+.asterisk_input::after {
+    content:"*"; 
+    color: #e32;
+}
+
+.input-form.error-color {
+    border-color: #db190b ;
+    background-color: #e3c1c1;
+}
+
+.error {
+    position: absolute;
+    margin: -0.4em 0.1em;
+    color: #db190b;
+    font-size: .8em;
+}
+
+.information{
+    display: flex;
+    justify-content: space-between;
+} 
+
+.text{
+    width: 47%;
+}
+
+.form-button {
+    background-color: var(--colorPrincipal);
+    color: white;
+    font-size: 1em;
+    width: 206px;
+    height: 40px;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.12));
+    border: 1px solid var(--colorPrincipal);
+    border-radius: .2em;
+    margin: 1em 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.form-button:hover {
+    background-color: #05728d;
+    transition: 0.7s;
+    transform: scale(1.1)
+}
+
+.createAcount, .login{
+    text-align: center;
+    font-size: 12px;
+    color: var(--color3);
+}
+
+.input-createAcount, .input-login{
+    text-decoration: none;
+    color: #383B58;
+}
+
+.span-form {
+    color: #4285F4;
+}
+
+.passwordIcon.ca, .passwordIcon.lo{
+    position: absolute;
+    margin-top: .9em;
+    margin-left: -2em;
+    color: #888a89;
+}
+
+.errorLogin {
+    position: absolute;
+    color: #db190b;
+    font-size: .9em;
+    margin-top: 10.5em;
+    width: 100%;
+}
+
+.LoginErrorApi{
+    color: #db190b;
+}
+
+@media screen and (max-width:768px){
+    .information{
+        display: inline-block;
+        text-align: initial;
+    } 
+    
+    .text{
+        width: 100%;
+    }
+    
+    .input-form {
+        margin: 0.7em 0;
+    }
+    
+    .error {
+        margin: -0.9em 0.1em;
+    }
+}
+
+@media screen and (max-width:  480px) {
+    .form-create-account {
+        width: 20em;
+        margin: 0 calc(50% - 10em);
+    }
+    
+    .errorLogin {
+        margin-top: 8.7em;   
+    }
+    
+    .input-form {
+        margin: .2em;
+    }
+
+    .passwordIcon.ca {
+        margin-top: -1.8em;
+        margin-left: 18em;
+    }
+
+    .passwordIcon.lo {
+        margin-top: -1.8em;
+        margin-left: 26em;
+    }
+
+    .error {
+        margin: -0.4em 7.1em;
+    }
+}

@@ -1,0 +1,61 @@
+#container_header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    background-color: #e6e8e6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+}
+
+#container_header>div:nth-child(2) {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+#score {
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+#score>p {
+    color: var(--color4);
+    font-size: var(--size20);
+}
+
+.h3_header, #container_header>div {
+    color: var(--color2);
+    font-size: var(--size14);
+    width: 45vw;
+}
+
+/****************Estilos para la puntuación***************/
+
+#container_header>div:nth-child(2)>div>div>button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.on {
+  color: var(--colorPrincipal);
+}
+.off {
+  color: #ccc;
+}
+
+#h2_header {
+    font-size: 15px;
+    color: var(--color3);
+}
+
+.h3_header_punctuation{
+    font-size: var(--size14); 
+}

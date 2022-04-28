@@ -1,0 +1,11 @@
+.new_product_page{
+    background-color: white;
+    margin: 3%;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+} 
+
+.title_adminpage{
+    color: var(--color2);
+    margin: 2.5% 2.5%;
+}
